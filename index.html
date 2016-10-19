@@ -3,8 +3,86 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Pokémon Battle</title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		
+		.pokemon{
+			display: inline-block;
+			margin: 0 20px;
+			border: 1px solid #000;
+		}
+		
+		.poke-title{
+			background: red;
+			color: white;
+			padding: 10px;
+			text-align: center;
+		}
+		
+		.poke-stats{
+			background: #2baef9;
+			color: white;
+			text-align: center;
+			padding: 10px 0;
+		}
+		
+		.poke-stats h4{
+			font-size: 20px;
+			padding: 5px 0;
+			margin: 0;
+		}
+		
+		.hp{
+			padding: 10px;
+			border: none;
+		}	
+	</style>
+	<script src="js/jquery.js"></script>
+	<script src="js/poke.js"></script>
 </head>
 <body>
+	<h1>Batalla Pokémon</h1>
 	
+	<div class="pokemon">
+		<header class="poke-title">
+			<h2>Charmander</h2>
+		</header>
+		<div class="poke-img">
+			<img src="img/Charmander_XY.gif" alt="">
+		</div>
+		<footer class="poke-stats">
+			<h4>HP</h4>
+			<input type="text" value="110" class="hp-charmander">
+			<form class="attacks" id="charmander">
+				<select name="ataque-char" id="ataque-char">
+					<option value="15">Flama</option>
+					<option value="40">Lanzallamas</option>
+				</select>
+				<input type="submit" value="Ataque" class="attack-btn">
+			</form>
+		</footer>
+	</div>
+	
+	<div class="pokemon">
+		<header class="poke-title">
+			<h2>Squirtle</h2>
+		</header>
+		<div class="poke-img">
+			<img src="img/X7CbZpL.gif" alt="">
+		</div>
+		<footer class="poke-stats">
+			<h4>HP</h4>
+			<input type="text" value="120" class="hp-squirtle">
+			<form class="attacks" id="squirtle">
+				<select name="ataque-squir" id="ataque-squir">
+					<option value="10">Burbuja</option>
+					<option value="50">Hidrobomba</option>
+				</select>
+				<input type="submit" value="Ataque" class="attack-btn">
+			</form>
+		</footer>
+	</div>
 </body>
 </html>
